@@ -1,0 +1,339 @@
+@import "./variables";
+
+.heading {
+  font-weight: 600;
+  font-size: 4.5rem;
+  color: $white;
+}
+.para {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: $secondary;
+}
+.primaryOutline {
+  font-size: 5rem;
+  font-weight: 700;
+  color: white;
+  outline-color: white;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+}
+
+.animated_button {
+  background: none;
+  border: 2px solid #00bcd4;
+  color: #00bcd4;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.5s ease-in-out, border 0.5s ease-in-out;
+  border-radius: 5px;
+  margin-top: 5rem;
+  .button_inner {
+    position: relative;
+    display: inline-block;
+    background: $btnBG2;
+    padding: 1.5rem 4rem;
+    top: -10px;
+    left: -10px;
+    border-radius: 5px;
+    transition: top 0.5s ease-in-out, left 0.5s ease-in-out;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+
+  &:hover .button_inner {
+    top: 0;
+    left: 0;
+  }
+
+  &:hover {
+    color: #fff;
+    border: none;
+  }
+}
+
+.guoteBtn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem; // Increased font size to 2rem
+  position: relative;
+  padding: 0;
+
+  span {
+    display: inline-block;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 1;
+    border-radius: 40px; // Added border-radius to span
+    color: #fff; // Ensuring the text color is white
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #6ec38d;
+    transition: width 0.3s ease-in-out;
+    z-index: 0;
+    border-radius: 40px; // Added border-radius to before pseudo-element
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% / 3); // Initially covering only the "Get" part
+    height: 100%;
+    background-color: #6ec38d;
+    transition: width 0.3s ease-in-out;
+    z-index: 0;
+    border-radius: 40px; // Added border-radius to after pseudo-element
+  }
+
+  &:hover::before,
+  &:active::before {
+    width: 100%;
+  }
+
+  &:hover::after,
+  &:active::after {
+    width: 0;
+  }
+
+  &:hover span,
+  &:active span {
+    color: #fff;
+  }
+}
+
+.marketing_section {
+  padding: 10rem 0rem;
+  background-color: $primarybg;
+  &_content {
+    width: 80%;
+    margin: auto;
+    padding: 3rem 0rem;
+
+    background: linear-gradient(
+      90.89deg,
+      rgba(110, 195, 141, 0.7) -7.33%,
+      rgba(37, 152, 206, 0.7) 100%
+    );
+    border-radius: 24px;
+    @include respond(phone) {
+      width: 90%;
+    }
+    h3 {
+      font-weight: 500;
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 8rem;
+      //  line-height: 72px;
+      text-align: center;
+      color: white;
+      letter-spacing: -2%;
+      @include respond(tab-port) {
+        font-size: 5rem;
+      }
+      @include respond(phone) {
+        font-size: 4rem;
+      }
+      span {
+        font-size: 8rem;
+        font-weight: 700;
+        color: white;
+        outline-color: white;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        letter-spacing: -2%;
+        @include respond(tab-port) {
+          font-size: 5rem;
+        }
+        @include respond(phone) {
+          font-size: 4rem;
+        }
+      }
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 7rem;
+      //  line-height: 72px;
+      text-align: center;
+      letter-spacing: -2%;
+      color: #27ed6f;
+      @include respond(tab-port) {
+        font-size: 5rem;
+      }
+      @include respond(phone) {
+        font-size: 4rem;
+      }
+      span {
+        font-size: 7rem;
+        letter-spacing: -2%;
+        font-weight: 700;
+        color: white;
+        outline-color: white;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        @include respond(tab-port) {
+          font-size: 5rem;
+        }
+        @include respond(phone) {
+          font-size: 4rem;
+        }
+      }
+    }
+    &_mailBox {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      input {
+        width: 40%;
+        padding: 1.6rem 1.6rem;
+        border: 1px solid white;
+        border-radius: 12px;
+        background: none;
+        outline: none;
+        @include respond(tab-port) {
+          width: 90%;
+        }
+        &::placeholder {
+          color: #ffffffb2;
+        }
+      }
+      button {
+        padding: 1.6rem;
+        border-radius: 0px 12px 12px 0px;
+        margin-left: -10.9rem;
+        border: none;
+        cursor: pointer;
+        color: #18191f;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+.common_top_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #6ec38d;
+    text-shadow: 0px 5.36px 5.36px 0px #ffffff40;
+    @include respond(tab-port) {
+      font-size: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  span {
+    font-size: 6rem;
+    font-weight: 700;
+    color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    text-align: center;
+    margin-left: 1rem;
+    @include respond(tab-port) {
+      font-size: 4rem;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    width: 70%;
+    margin-top: 4rem;
+  }
+}
+
+.unlock_container {
+  padding: 8rem 0rem;
+  background-image: url("../../assets/aboutAssets/unlockBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 8rem;
+      font-weight: 700;
+      color: #6ec38d;
+      text-shadow: 0px 5.36px 5.36px 0px #ffffff40;
+    }
+    span {
+      font-size: 6rem;
+      font-weight: 700;
+      color: white;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px;
+      text-align: center;
+      @include respond(tab-port) {
+        font-size: 3rem;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 2rem;
+      color: white;
+    }
+  }
+  &_content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_rw {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > *:not(:first-child) {
+        margin-left: 2rem;
+      }
+      @include respond(tab-port) {
+        flex-direction: column;
+        margin: auto;
+        margin-top: 3rem;
+        & > *:not(:first-child) {
+          margin-left: 0rem;
+        }
+      }
+      button {
+        border: 1.11px dotted #ffffff;
+        background: none;
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding: 1.5rem 2.5rem;
+        border-radius: 13.87px;
+        cursor: pointer;
+        &:hover {
+          background: $btnBg;
+        }
+        @include respond(tab-port) {
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+}

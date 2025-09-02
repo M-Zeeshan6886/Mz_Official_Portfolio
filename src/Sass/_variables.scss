@@ -1,0 +1,21 @@
+$linear: linear-gradient(
+  to bottom right,
+  rgba(255, 255, 255, 0.1),
+  rgba(128, 128, 128, 0.5)
+);
+
+$btnBg: linear-gradient(90.89deg, #6EC38D -7.33%, #2598CE 100%);
+
+$white: #fff;
+$primarybg: #28282B;
+$primary: #6ec38d;
+$secondary: #B3B3B3;
+
+$bgLight: #141414;
+// Spacing
+$spacing-unit: 0.4rem;
+$padding: $spacing-unit * 3 $spacing-unit * 6;
+
+
+
+$btnBG2: linear-gradient(90.89deg, #6EC38D -7.33%, #2598CE 100%);

@@ -1,0 +1,194 @@
+@use "../../Sass/mixin" as m;
+@use "../../Sass/variables" as var;
+
+.nav_container {
+  padding: .5rem 0rem;
+  background: var.$primarybg;
+  // background-color: rgba(17, 17, 17, 1);
+  @include m.respond(tab-port) {
+    display: none;
+  }
+  &_content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //     background-color: lavender;
+    &_left {
+      img {
+        cursor: pointer;
+        width: 10rem;
+        height: 7rem;
+        border-radius: 50%;
+      }
+    }
+    &_middle {
+      display: flex;
+      align-items: center;
+
+      &_button {
+        border: none;
+        background: none;
+        font-size: 1.5rem;
+        // font-weight: 600;
+        //    font-family: Roboto;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      & > *:not(:first-child) {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+.guoteBtn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.7rem; // Increased font size to 2rem
+  position: relative;
+  padding: 0;
+
+  span {
+    display: inline-block;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 1;
+    border-radius: 40px; // Added border-radius to span
+    color: #fff; // Ensuring the text color is white
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #6ec38d;
+    transition: width 0.3s ease-in-out;
+    z-index: 0;
+    border-radius: 40px; // Added border-radius to before pseudo-element
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% / 3); // Initially covering only the "Get" part
+    height: 100%;
+    background-color: #6ec38d;
+    transition: width 0.3s ease-in-out;
+    z-index: 0;
+    border-radius: 40px; // Added border-radius to after pseudo-element
+  }
+
+  &:hover::before,
+  &:active::before {
+    width: 100%;
+  }
+
+  &:hover::after,
+  &:active::after {
+    width: 0;
+  }
+
+  &:hover span,
+  &:active span {
+    color: #fff;
+  }
+}
+
+//   ****************************** Mobile NavBar ******************************
+.mobileBar {
+  display: none;
+
+  @include m.respond(tab-port) {
+    display: block;
+    background: var.$primarybg;
+    padding: 1rem 0rem;
+  }
+
+  &_content {
+    width: 85%;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_left {
+      img {
+        cursor: pointer;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+// **************************** Responsive container Modal *****************************
+
+.responsive_container {
+  background-color: #5c718d71;
+  position: fixed;
+  inset: 0;
+  // width: 100%;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include m.respond(tab-port) {
+    display: block;
+  }
+  &_content {
+    width: 50%;
+    height: 100vh;
+    background-color: #141414;
+    padding: 3rem;
+    @include m.respond(phone) {
+      width: 70%;
+    }
+    &_sidebar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &_top {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+          cursor: pointer;
+          width: 10rem;
+          height: 10rem;
+          border-radius: 50%;
+        }
+      }
+      &_bottom {
+        margin-top: 10rem;
+        margin-bottom: 4rem;
+        padding: 0rem 2rem;
+        display: flex;
+        flex-direction: column;
+        & > *:not(:first-child) {
+          margin-top: 2.5rem;
+        }
+        button {
+          background: none;
+          border: none;
+          text-align: left;
+          font-size: 2rem;
+          cursor: pointer;
+          font-weight: 400;
+          color: white;
+        }
+      }
+    }
+  }
+}
