@@ -5,6 +5,7 @@
   padding: .5rem 0rem;
   background: var.$primarybg;
   // background-color: rgba(17, 17, 17, 1);
+  border-bottom: 1px solid gray;
   @include m.respond(tab-port) {
     display: none;
   }

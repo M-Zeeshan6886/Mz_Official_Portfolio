@@ -1,14 +1,14 @@
-@import "./variables";
-
+@use "./variables" as var;
+@use "./mixin" as m;
 .heading {
   font-weight: 600;
   font-size: 4.5rem;
-  color: $white;
+  color: var.$white;
 }
 .para {
   font-weight: 400;
   font-size: 1.5rem;
-  color: $secondary;
+  color: var.$secondary;
 }
 .primaryOutline {
   font-size: 5rem;
@@ -31,7 +31,7 @@
   .button_inner {
     position: relative;
     display: inline-block;
-    background: $btnBG2;
+    background: var.$btnBG2;
     padding: 1.5rem 4rem;
     top: -10px;
     left: -10px;
@@ -114,7 +114,7 @@
 
 .marketing_section {
   padding: 10rem 0rem;
-  background-color: $primarybg;
+  background-color: var.$primarybg;
   &_content {
     width: 80%;
     margin: auto;
@@ -126,7 +126,7 @@
       rgba(37, 152, 206, 0.7) 100%
     );
     border-radius: 24px;
-    @include respond(phone) {
+    @include m.respond(phone) {
       width: 90%;
     }
     h3 {
@@ -142,10 +142,10 @@
       text-align: center;
       color: white;
       letter-spacing: -2%;
-      @include respond(tab-port) {
+      @include  m.respond(tab-port) {
         font-size: 5rem;
       }
-      @include respond(phone) {
+      @include m.respond(phone) {
         font-size: 4rem;
       }
       span {
@@ -156,10 +156,10 @@
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px;
         letter-spacing: -2%;
-        @include respond(tab-port) {
+        @include m.respond(tab-port) {
           font-size: 5rem;
         }
-        @include respond(phone) {
+        @include m.respond(phone) {
           font-size: 4rem;
         }
       }
@@ -171,10 +171,10 @@
       text-align: center;
       letter-spacing: -2%;
       color: #27ed6f;
-      @include respond(tab-port) {
+      @include m.respond(tab-port) {
         font-size: 5rem;
       }
-      @include respond(phone) {
+      @include m.respond(phone) {
         font-size: 4rem;
       }
       span {
@@ -185,10 +185,10 @@
         outline-color: white;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px;
-        @include respond(tab-port) {
+        @include m.respond(tab-port) {
           font-size: 5rem;
         }
-        @include respond(phone) {
+        @include m.respond(phone) {
           font-size: 4rem;
         }
       }
@@ -205,7 +205,7 @@
         border-radius: 12px;
         background: none;
         outline: none;
-        @include respond(tab-port) {
+        @include m.respond(tab-port) {
           width: 90%;
         }
         &::placeholder {
@@ -234,7 +234,7 @@
     font-weight: 700;
     color: #6ec38d;
     text-shadow: 0px 5.36px 5.36px 0px #ffffff40;
-    @include respond(tab-port) {
+    @include m.respond(tab-port) {
       font-size: 4rem;
       display: flex;
       flex-direction: column;
@@ -249,7 +249,7 @@
     -webkit-text-stroke: 1px;
     text-align: center;
     margin-left: 1rem;
-    @include respond(tab-port) {
+    @include m.respond(tab-port) {
       font-size: 4rem;
     }
   }
@@ -286,7 +286,7 @@
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke: 1px;
       text-align: center;
-      @include respond(tab-port) {
+      @include m.respond(tab-port) {
         font-size: 3rem;
       }
     }
@@ -310,7 +310,7 @@
       & > *:not(:first-child) {
         margin-left: 2rem;
       }
-      @include respond(tab-port) {
+      @include m.respond(tab-port) {
         flex-direction: column;
         margin: auto;
         margin-top: 3rem;
@@ -328,9 +328,9 @@
         border-radius: 13.87px;
         cursor: pointer;
         &:hover {
-          background: $btnBg;
+          background: var.$btnBg;
         }
-        @include respond(tab-port) {
+        @include m.respond(tab-port) {
           margin-top: 3rem;
         }
       }
