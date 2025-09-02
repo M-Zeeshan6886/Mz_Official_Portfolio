@@ -30,9 +30,10 @@
   margin-top: 5rem;
   .button_inner {
     position: relative;
-    display: inline-block;
+    display: flex;
+    gap: 5px;
     background: var.$btnBG2;
-    padding: 1.5rem 4rem;
+    padding: 1rem 5rem;
     top: -10px;
     left: -10px;
     border-radius: 5px;
