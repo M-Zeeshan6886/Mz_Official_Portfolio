@@ -114,17 +114,21 @@
   &_content {
     position: fixed;
     // top: 0%;
-    right: 1%;
-    bottom: 0%;
+    right: -3%;
+    bottom: -3%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 8rem;
     // background: #2598ce;
     height: 50vh;
+
     p {
       color: var.$white;
+      letter-spacing: 2px;
+      transform: rotate(90deg); // rotate clockwise
+    //   transform-origin: center;
     }
     hr {
       height: 40%;
