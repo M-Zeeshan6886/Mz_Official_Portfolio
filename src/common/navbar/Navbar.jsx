@@ -85,7 +85,7 @@ const Navbar = () => {
           <div className={styles.mobileBar_content_middle}>
             <TfiAlignLeft
               onClick={toggleModal}
-              style={{ color: "white", fontSize: "4rem" }}
+              style={{ color: "white", fontSize: "3rem" }}
             />
           </div>
         </div>
@@ -105,10 +105,7 @@ const Navbar = () => {
                 <button onClick={() => navigate("/")}>Home</button>
                 <button onClick={() => navigate("/about")}>About</button>
                 <button onClick={() => navigate("/service")}>Services</button>
-                <button onClick={() => navigate("/portfolio")}>
-                  Portfolio
-                </button>
-                <button onClick={() => navigate("/guote")}>Get Quote</button>
+                <button onClick={() => navigate("/guote")}>Contact Me</button>
               </div>
             </div>
           </div>
