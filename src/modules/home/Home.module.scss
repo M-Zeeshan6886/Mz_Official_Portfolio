@@ -121,14 +121,15 @@
     align-items: center;
     justify-content: center;
     gap: 8rem;
-    // background: #2598ce;
     height: 50vh;
 
+    @include m.respond(tab-port) {
+      display: none;
+    }
     p {
       color: var.$white;
       letter-spacing: 2px;
       transform: rotate(90deg); // rotate clockwise
-      //   transform-origin: center;
     }
     hr {
       height: 40%;
