@@ -128,7 +128,7 @@
       color: var.$white;
       letter-spacing: 2px;
       transform: rotate(90deg); // rotate clockwise
-    //   transform-origin: center;
+      //   transform-origin: center;
     }
     hr {
       height: 40%;
@@ -139,4 +139,106 @@
   font-size: 2rem;
   color: var.$white;
   cursor: pointer;
+}
+
+// ******** stack display ******
+
+.service_container {
+  padding: 6rem 0rem;
+  background-image: url("../../assets/homeAssets/serviceBg.png");
+  background-size: cover;
+  background-position: center;
+  background: var.$primarybg;
+  &_content {
+    width: 90%;
+    margin: auto;
+    &_top {
+      h2 {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 36px;
+        text-align: center;
+        color: var.$primary;
+        letter-spacing: 5px;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 6rem;
+        line-height: 72px;
+        text-align: center;
+        color: white;
+
+        @include m.respond(tab-port) {
+          font-size: 4rem;
+        }
+        span {
+          font-size: 6rem;
+          font-weight: 700;
+          color: white;
+          outline-color: white;
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke: 1px;
+
+          @include m.respond(tab-port) {
+            font-size: 4rem;
+          }
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 1.9rem;
+        line-height: 30px;
+        text-align: center;
+        color: var.$secondary;
+      }
+    }
+    &_bottom {
+      margin-top: 4rem;
+      display: flex;
+      justify-content: center;
+      & > *:not(:first-child) {
+        margin-left: 2.5rem;
+      }
+      @include m.respond(tab-port) {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-top: 3rem;
+        & > *:not(:first-child) {
+          margin-top: 2.5rem;
+          margin-left: 0rem;
+        }
+      }
+    }
+  }
+}
+.sBox {
+  width: 290px;
+  border: 1px solid var.$secondary;
+  border-radius: 15px;
+  &_content {
+    height: 329px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //     background-color: lawngreen;
+    & > *:not(:first-child) {
+      margin-top: 2rem;
+    }
+    h1 {
+      font-weight: 800;
+      font-size: 2.4rem;
+      line-height: 26px;
+      color: white;
+      letter-spacing: 3px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 22px;
+      text-align: center;
+      color: white;
+    }
+  }
 }
