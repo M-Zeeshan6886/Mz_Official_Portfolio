@@ -2,9 +2,18 @@ import React from "react";
 import { Navbar } from "../../common";
 import styles from "./Home.module.scss";
 import { MdOutlineFileDownload } from "react-icons/md";
-import { heroBanner, SIcon1, SIcon2, SIcon3, SIcon4 } from "../../assets";
+import {
+  heroBanner,
+  SIcon1,
+  SIcon2,
+  SIcon3,
+  SIcon4,
+  SIcon5,
+  SIcon6,
+} from "../../assets";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Explore from "../../common/exploreWork/Explore";
 
 const Home = () => {
   return (
@@ -94,9 +103,20 @@ const Home = () => {
               title="HTML||CSS||SCSS"
               para="Craft clean, accessible designs with structured code and modern styling."
             />
+            <ServiceBox
+              ImgIcon={SIcon5}
+              title="CSS3"
+              para="Craft clean, accessible designs with structured code and modern styling."
+            />
+            <ServiceBox
+              ImgIcon={SIcon6}
+              title="SASS"
+              para="Craft clean, accessible designs with structured code and modern styling."
+            />
           </div>
         </div>
       </div>
+      <Explore />
     </>
   );
 };
@@ -108,7 +128,11 @@ const ServiceBox = (props) => {
     <>
       <div className={styles.sBox}>
         <div className={styles.sBox_content}>
-          <img src={props.ImgIcon} alt="Icons" />
+          <img
+            src={props.ImgIcon}
+            alt="Icons"
+            className={styles.serviceIcons}
+          />
           <h1>{props.title}</h1>
           <p>{props.para}</p>
         </div>
