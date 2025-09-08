@@ -6,5 +6,16 @@ import SIcon3 from "./serviceIcon3.svg";
 import SIcon4 from "./serviceIcon4.svg";
 import SIcon5 from "./serviceIcon5.svg";
 import SIcon6 from "./serviceIcon6.svg";
+import SIcon7 from "./serviceIcon7.svg";
 
-export { Logo, heroBanner, SIcon1, SIcon2, SIcon3, SIcon4, SIcon5, SIcon6 };
+export {
+  Logo,
+  heroBanner,
+  SIcon1,
+  SIcon2,
+  SIcon3,
+  SIcon4,
+  SIcon5,
+  SIcon6,
+  SIcon7,
+};

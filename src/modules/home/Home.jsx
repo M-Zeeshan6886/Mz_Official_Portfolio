@@ -10,6 +10,7 @@ import {
   SIcon4,
   SIcon5,
   SIcon6,
+  SIcon7,
 } from "../../assets";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -113,6 +114,11 @@ const Home = () => {
               title="SASS"
               para="Craft clean, accessible designs with structured code and modern styling."
             />
+            <ServiceBox
+              ImgIcon={SIcon7}
+              title="Power BI"
+              para="Transform raw data into clear, interactive dashboards for smarter, data-driven decisions."
+            />
           </div>
         </div>
       </div>
@@ -122,5 +128,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
