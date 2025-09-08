@@ -1,0 +1,47 @@
+@use "../../Sass/mixin" as m;
+@use "../../Sass/variables" as var;
+
+.sBox {
+  width: 290px;
+  border: 1px solid var.$secondary;
+  border-radius: 15px;
+  cursor: pointer;
+  &_content {
+    height: 329px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //     background-color: lawngreen;
+    & > *:not(:first-child) {
+      margin-top: 2rem;
+    }
+
+    h1 {
+      font-weight: 800;
+      font-size: 2.4rem;
+      line-height: 26px;
+      color: white;
+      letter-spacing: 3px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 22px;
+      text-align: center;
+      color: white;
+    }
+  }
+}
+.serviceIcons {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+}
+
+.back {
+  background: var.$btnBG2;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 20px  ;
+}

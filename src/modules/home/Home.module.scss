@@ -149,7 +149,7 @@
   background-image: url("../../assets/serviceBg.png");
   background-size: cover;
   background-position: center;
-//   background: var.$primarybg;
+  //   background: var.$primarybg;
   &_content {
     width: 90%;
     margin: auto;
@@ -212,40 +212,4 @@
       }
     }
   }
-}
-.sBox {
-  width: 290px;
-  border: 1px solid var.$secondary;
-  border-radius: 15px;
-  &_content {
-    height: 329px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    //     background-color: lawngreen;
-    & > *:not(:first-child) {
-      margin-top: 2rem;
-    }
-
-    h1 {
-      font-weight: 800;
-      font-size: 2.4rem;
-      line-height: 26px;
-      color: white;
-      letter-spacing: 3px;
-    }
-    p {
-      font-weight: 400;
-      font-size: 1.4rem;
-      line-height: 22px;
-      text-align: center;
-      color: white;
-    }
-  }
-}
-.serviceIcons {
-  width: 13rem;
-  height: 13rem;
-  border-radius: 50%;
 }

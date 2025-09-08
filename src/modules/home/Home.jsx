@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "../../common";
+import { Navbar, ServiceBox } from "../../common";
 import styles from "./Home.module.scss";
 import { MdOutlineFileDownload } from "react-icons/md";
 import {
@@ -100,7 +100,7 @@ const Home = () => {
             />
             <ServiceBox
               ImgIcon={SIcon4}
-              title="HTML||CSS||SCSS"
+              title="HTML5"
               para="Craft clean, accessible designs with structured code and modern styling."
             />
             <ServiceBox
@@ -123,20 +123,4 @@ const Home = () => {
 
 export default Home;
 
-const ServiceBox = (props) => {
-  return (
-    <>
-      <div className={styles.sBox}>
-        <div className={styles.sBox_content}>
-          <img
-            src={props.ImgIcon}
-            alt="Icons"
-            className={styles.serviceIcons}
-          />
-          <h1>{props.title}</h1>
-          <p>{props.para}</p>
-        </div>
-      </div>
-    </>
-  );
-};
+
