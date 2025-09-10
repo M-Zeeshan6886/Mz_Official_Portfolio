@@ -7,6 +7,7 @@ import SIcon4 from "./serviceIcon4.svg";
 import SIcon5 from "./serviceIcon5.svg";
 import SIcon6 from "./serviceIcon6.svg";
 import SIcon7 from "./serviceIcon7.svg";
+import EWF1 from "./ewframe1.png";
 
 export {
   Logo,
@@ -18,4 +19,5 @@ export {
   SIcon5,
   SIcon6,
   SIcon7,
+  EWF1,
 };
