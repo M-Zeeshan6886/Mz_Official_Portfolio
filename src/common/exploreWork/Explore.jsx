@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Explore.module.scss";
-import { EWF1, EWF2, EWF3, EWF4, EWF5 } from "../../assets";
+import { EWF1, EWF2, EWF3, EWF4, EWF5, EWF6, EWF7, EWF8 } from "../../assets";
 
 const Explore = () => {
   return (
@@ -38,6 +38,24 @@ const Explore = () => {
             />
             <img
               src={EWF5}
+              alt="Frame"
+            //   onClick={() => navigate("/")}
+            //   className={currentPath === "/" ? styles.active : ""}
+            />
+            <img
+              src={EWF6}
+              alt="Frame"
+            //   onClick={() => navigate("/")}
+            //   className={currentPath === "/" ? styles.active : ""}
+            />
+            <img
+              src={EWF7}
+              alt="Frame"
+            //   onClick={() => navigate("/")}
+            //   className={currentPath === "/" ? styles.active : ""}
+            />
+            <img
+              src={EWF8}
               alt="Frame"
             //   onClick={() => navigate("/")}
             //   className={currentPath === "/" ? styles.active : ""}

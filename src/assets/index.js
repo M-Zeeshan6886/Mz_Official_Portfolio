@@ -12,6 +12,9 @@ import EWF2 from "./ewframe2.svg";
 import EWF3 from "./ewframe3.svg";
 import EWF4 from "./ewframe4.svg";
 import EWF5 from "./ewframe5.svg";
+import EWF6 from "./ewframe6.svg";
+import EWF7 from "./ewframe7.svg";
+import EWF8 from "./ewframe8.svg";
 
 export {
   Logo,
@@ -28,4 +31,7 @@ export {
   EWF3,
   EWF4,
   EWF5,
+  EWF6,
+  EWF7,
+  EWF8,
 };
