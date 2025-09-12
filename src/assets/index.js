@@ -17,6 +17,7 @@ import EWF7 from "./ewframe7.svg";
 import EWF8 from "./ewframe8.svg";
 import EWB1 from "./ewBanner1.png";
 import EWB2 from "./ewBanner2.png";
+import EWB3 from "./ewBanner3.png";
 
 export {
   Logo,
@@ -38,4 +39,5 @@ export {
   EWF8,
   EWB1,
   EWB2,
+  EWB3,
 };
