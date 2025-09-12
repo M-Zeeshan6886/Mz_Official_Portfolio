@@ -4,7 +4,7 @@ import { EWF1, EWF2, EWF3, EWF4, EWF5, EWF6, EWF7, EWF8 } from "../../assets";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 
 const Explore = () => {
-     const navigate = useNavigate();
+  const navigate = useNavigate();
   const location = useLocation();
   const currentPath = location.pathname;
 
@@ -20,14 +20,14 @@ const Explore = () => {
             <img
               src={EWF1}
               alt="Frame"
-                onClick={() => navigate("/")}
-                className={currentPath === "/" ? styles.active : ""}
+              onClick={() => navigate("/")}
+              className={currentPath === "/" ? styles.active : ""}
             />
             <img
               src={EWF2}
               alt="Frame"
-              //   onClick={() => navigate("/")}
-              //   className={currentPath === "/" ? styles.active : ""}
+              onClick={() => navigate("/smartaclass")}
+              className={currentPath === "/smartaclass" ? styles.active : ""}
             />
             <img
               src={EWF3}
