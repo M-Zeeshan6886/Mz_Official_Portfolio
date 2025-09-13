@@ -24,10 +24,10 @@ const Explore = () => {
               className={currentPath === "/" ? styles.active : ""}
             />
             <img
-              src={EWF2}
+              src={EWF4}
               alt="Frame"
-              onClick={() => navigate("/smartaclass")}
-              className={currentPath === "/smartaclass" ? styles.active : ""}
+              onClick={() => navigate("/caddie")}
+              className={currentPath === "/caddie" ? styles.active : ""}
             />
             <img
               src={EWF3}
@@ -36,22 +36,16 @@ const Explore = () => {
               className={currentPath === "/suren" ? styles.active : ""}
             />
             <img
-              src={EWF4}
+              src={EWF2}
               alt="Frame"
-              onClick={() => navigate("/caddie")}
-              className={currentPath === "/caddie" ? styles.active : ""}
-            />
-            <img
-              src={EWF5}
-              alt="Frame"
-              //   onClick={() => navigate("/")}
-              //   className={currentPath === "/" ? styles.active : ""}
+              onClick={() => navigate("/smartaclass")}
+              className={currentPath === "/smartaclass" ? styles.active : ""}
             />
             <img
               src={EWF6}
               alt="Frame"
-              //   onClick={() => navigate("/")}
-              //   className={currentPath === "/" ? styles.active : ""}
+              onClick={() => navigate("/aichatbot")}
+              className={currentPath === "/aichatbot" ? styles.active : ""}
             />
             <img
               src={EWF7}
@@ -61,6 +55,12 @@ const Explore = () => {
             />
             <img
               src={EWF8}
+              alt="Frame"
+              //   onClick={() => navigate("/")}
+              //   className={currentPath === "/" ? styles.active : ""}
+            />
+            <img
+              src={EWF5}
               alt="Frame"
               //   onClick={() => navigate("/")}
               //   className={currentPath === "/" ? styles.active : ""}
