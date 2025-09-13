@@ -50,8 +50,8 @@ const Explore = () => {
             <img
               src={EWF7}
               alt="Frame"
-              //   onClick={() => navigate("/")}
-              //   className={currentPath === "/" ? styles.active : ""}
+              onClick={() => navigate("/puntapp")}
+              className={currentPath === "/puntapp" ? styles.active : ""}
             />
             <img
               src={EWF8}
