@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./modules";
-import { RugBaazar, SmartaClass, Suren } from "./common";
+import { Caddie, RugBaazar, SmartaClass, Suren } from "./common";
 
 const Router = () => {
   return (
@@ -12,6 +12,7 @@ const Router = () => {
             <Route index element={<RugBaazar />} />
             <Route path="/smartaclass" element={<SmartaClass />} />
             <Route path="/suren" element={<Suren />} />
+            <Route path="/caddie" element={<Caddie />} />
           </Route>
         </Routes>
       </BrowserRouter>

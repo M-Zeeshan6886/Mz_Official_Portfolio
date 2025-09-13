@@ -32,14 +32,14 @@ const Explore = () => {
             <img
               src={EWF3}
               alt="Frame"
-                onClick={() => navigate("/suren")}
-                className={currentPath === "/suren" ? styles.active : ""}
+              onClick={() => navigate("/suren")}
+              className={currentPath === "/suren" ? styles.active : ""}
             />
             <img
               src={EWF4}
               alt="Frame"
-              //   onClick={() => navigate("/")}
-              //   className={currentPath === "/" ? styles.active : ""}
+              onClick={() => navigate("/caddie")}
+              className={currentPath === "/caddie" ? styles.active : ""}
             />
             <img
               src={EWF5}
