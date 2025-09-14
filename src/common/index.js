@@ -7,3 +7,4 @@ export { default as Suren } from "./exploreWork/workDesc/Suren";
 export { default as Caddie } from "./exploreWork/workDesc/Caddie";
 export { default as ChatBot } from "./exploreWork/workDesc/ChatBot";
 export { default as Punt } from "./exploreWork/workDesc/Punt";
+export { default as Signature } from "./exploreWork/workDesc/Signature";
