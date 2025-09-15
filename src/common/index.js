@@ -9,3 +9,4 @@ export { default as ChatBot } from "./exploreWork/workDesc/ChatBot";
 export { default as Punt } from "./exploreWork/workDesc/Punt";
 export { default as Signature } from "./exploreWork/workDesc/Signature";
 export { default as PeriStudio } from "./exploreWork/workDesc/PeriStudio";
+export { default as Footer } from "./footer/Footer";

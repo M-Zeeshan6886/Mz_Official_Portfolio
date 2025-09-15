@@ -23,8 +23,8 @@ const Navbar = () => {
       name: "About",
     },
     {
-      path: "/service",
-      name: "Services",
+      path: "/mywork",
+      name: "My Work",
     },
   ];
 
@@ -104,8 +104,10 @@ const Navbar = () => {
               >
                 <button onClick={() => navigate("/")}>Home</button>
                 <button onClick={() => navigate("/about")}>About</button>
-                <button onClick={() => navigate("/service")}>Services</button>
-                <button onClick={() => navigate("/guote")}>Contact Me</button>
+                <button onClick={() => navigate("/work")}>My Work</button>
+                <button onClick={() => navigate("/contactus")}>
+                  Contact Me
+                </button>
               </div>
             </div>
           </div>

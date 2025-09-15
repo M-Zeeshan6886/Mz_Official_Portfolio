@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, ServiceBox } from "../../common";
+import { Footer, Navbar, ServiceBox } from "../../common";
 import styles from "./Home.module.scss";
 import { MdOutlineFileDownload } from "react-icons/md";
 import {
@@ -123,6 +123,7 @@ const Home = () => {
         </div>
       </div>
       <Explore />
+      <Footer />
     </>
   );
 };
