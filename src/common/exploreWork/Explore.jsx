@@ -62,8 +62,8 @@ const Explore = () => {
             <img
               src={EWF5}
               alt="Frame"
-              //   onClick={() => navigate("/")}
-              //   className={currentPath === "/" ? styles.active : ""}
+                onClick={() => navigate("/peristudio")}
+                className={currentPath === "/peristudio" ? styles.active : ""}
             />
           </div>
           <Outlet />

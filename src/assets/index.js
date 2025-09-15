@@ -19,6 +19,7 @@ import EWB1 from "./ewBanner1.png";
 import EWB2 from "./ewBanner2.png";
 import EWB3 from "./ewBanner3.png";
 import EWB4 from "./ewBanner4.png";
+import EWB5 from "./ewBanner5.png";
 
 export {
   Logo,
@@ -42,4 +43,5 @@ export {
   EWB2,
   EWB3,
   EWB4,
+  EWB5,
 };

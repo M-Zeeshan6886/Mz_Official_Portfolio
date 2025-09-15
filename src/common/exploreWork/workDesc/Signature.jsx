@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../Explore.module.scss";
-import { EWB4, EWF8 } from "../../../assets";
+import { EWF8 } from "../../../assets";
 
 const Signature = () => {
   return (
