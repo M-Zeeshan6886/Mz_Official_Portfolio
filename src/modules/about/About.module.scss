@@ -1,0 +1,33 @@
+@use "../../Sass/mixin" as m;
+@use "../../Sass/variables" as var;
+@use "../../Sass/Styles" as s;
+
+.about_hero {
+  padding: 1rem 0rem;
+  width: 100%;
+  margin: auto;
+  background-image: url("../../assets/exploreBg.png");
+  &_content {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_left {
+      width: 55%;
+      padding: 1rem;
+      background-color: lavender;
+    }
+    &_right {
+      width: 43%;
+      height: 120vh;
+    //   padding: 1rem;
+    border-radius: 5px;
+      background-color: lavender;
+      background-image: url("../../assets/aboutBanner.jpeg");
+      background-size: cover;
+      background-position: center;
+
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Footer, Navbar, ServiceBox } from "../../common";
 import styles from "./Home.module.scss";
 import { MdOutlineFileDownload } from "react-icons/md";
@@ -17,6 +17,9 @@ import { FaXTwitter } from "react-icons/fa6";
 import Explore from "../../common/exploreWork/Explore";
 
 const Home = () => {
+  useEffect(() => {
+    document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <>
       <div className={styles.social_container}>
