@@ -1,6 +1,6 @@
 @use "../../Sass/mixin" as m;
 @use "../../Sass/variables" as var;
-@use "../../Sass/Styles" as s;
+@use "../../Sass/Styles" ;
 
 .about_hero {
   padding: 1rem 0rem;
@@ -13,21 +13,59 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include m.respond(tab-port){
+        flex-direction: column;
+        align-items: center;
+    }
     &_left {
-      width: 55%;
+      width: 40%;
       padding: 1rem;
-      background-color: lavender;
+      //   background-color: lavender;
+      @include m.respond(tab-port){
+        width: 95%;
+      }
+      span {
+        color: var.$white;
+        opacity: 0.7;
+        letter-spacing: 3px;
+        font-size: 1rem;
+        // text-shadow: 0 20px 15px rgba(0, 0, 0, 0.6);
+      }
+      h1 {
+        font-size: 4rem;
+        background: linear-gradient(90.89deg, #6ec38d -7.33%, #2598ce 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        // text-shadow: 0 0px 10px var.$white;
+        @include m.respond(tab-port) {
+          text-shadow: none;
+          font-size: 3rem;
+        }
+      }
+      h3 {
+        color: var.$white;
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-align: justify;
+        margin-top: 1rem;
+      }
     }
     &_right {
-      width: 43%;
-      height: 120vh;
-    //   padding: 1rem;
-    border-radius: 5px;
-      background-color: lavender;
+      width: 47%;
+      height: 100vh;
+      //   padding: 1rem;
+      border-radius: 5px;
+    //   background-color: lavender;
       background-image: url("../../assets/aboutBanner.jpeg");
-      background-size: cover;
+      background-size: contain;
       background-position: center;
-
+      @include m.respond(tab-port){
+        width: 95%;
+        margin-top: 2rem;
+        background-repeat: no-repeat;
+        height: 80vh;
+        border-radius: 10px;
+      }
     }
   }
 }
