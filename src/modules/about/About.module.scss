@@ -1,6 +1,6 @@
 @use "../../Sass/mixin" as m;
 @use "../../Sass/variables" as var;
-@use "../../Sass/Styles" ;
+@use "../../Sass/Styles";
 
 .about_hero {
   padding: 1rem 0rem;
@@ -13,15 +13,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include m.respond(tab-port){
-        flex-direction: column;
-        align-items: center;
+    @include m.respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
     }
     &_left {
       width: 40%;
       padding: 1rem;
       //   background-color: lavender;
-      @include m.respond(tab-port){
+      @include m.respond(tab-port) {
         width: 95%;
       }
       span {
@@ -55,16 +55,99 @@
       height: 100vh;
       //   padding: 1rem;
       border-radius: 5px;
-    //   background-color: lavender;
+      //   background-color: lavender;
       background-image: url("../../assets/aboutBanner.jpeg");
       background-size: contain;
       background-position: center;
-      @include m.respond(tab-port){
+      @include m.respond(tab-port) {
         width: 95%;
         margin-top: 2rem;
         background-repeat: no-repeat;
         height: 80vh;
         border-radius: 10px;
+      }
+    }
+  }
+}
+.experience_container {
+  padding: 2rem 0rem;
+  background-image: url("../../assets/exploreBg.png");
+  &_content {
+    width: 95%;
+    margin: auto;
+    &_top {
+      h2 {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 36px;
+        text-align: center;
+        color: var.$primary;
+        letter-spacing: 5px;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 6rem;
+        line-height: 72px;
+        text-align: center;
+        color: white;
+
+        @include m.respond(tab-port) {
+          font-size: 4rem;
+        }
+        span {
+          font-size: 6rem;
+          font-weight: 700;
+          color: white;
+          outline-color: white;
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke: 1px;
+
+          @include m.respond(tab-port) {
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+    &_bottom{
+        margin-top: 5rem;
+    }
+  }
+}
+
+.excard_container {
+  padding: 1rem;
+  width: 33%;
+  height: auto;
+  //   background: lawngreen;
+  border-right: 1px solid var.$white;
+  &_content {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    img {
+      width: 7rem;
+      height: 7rem;
+    }
+    &_right {
+      h1 {
+        color: var.$white;
+        font-size: 2.5rem;
+      }
+      h3 {
+        color: var.$white;
+        font-weight: 400;
+        font-size: 1.8rem;
+      }
+      span {
+        color: var.$white;
+        opacity: 0.5;
+        font-size: 1.4;
+        // margin-bottom: 6rem;
+      }
+      p {
+        color: var.$white;
+        font-weight: 400;
+        font-size: 1.6rem;
       }
     }
   }
