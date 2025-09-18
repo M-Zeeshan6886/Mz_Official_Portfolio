@@ -108,18 +108,25 @@
         }
       }
     }
-    &_bottom{
-        margin-top: 5rem;
+    &_bottom {
+      margin-top: 5rem;
+
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: space-between;|
+    &>*:not(:first-child){
+        margin-top: 3rem;
+    }
     }
   }
 }
 
 .excard_container {
   padding: 1rem;
-  width: 33%;
+  width: 100%;
   height: auto;
   //   background: lawngreen;
-  border-right: 1px solid var.$white;
+//   border-right: 1px solid var.$white;
   &_content {
     display: flex;
     align-items: start;
@@ -127,6 +134,7 @@
     img {
       width: 7rem;
       height: 7rem;
+      border-radius: 5px;
     }
     &_right {
       h1 {
