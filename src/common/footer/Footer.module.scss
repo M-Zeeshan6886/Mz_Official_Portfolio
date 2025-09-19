@@ -92,7 +92,7 @@
       }
       &_services {
         width: 65%;
-        // background-color: lawngreen;
+        background-color: lawngreen;
         h1 {
           font-weight: 600;
           font-size: 1.6rem;
@@ -122,6 +122,11 @@
     font-size: 1.4rem;
     line-height: 21px;
     color: #ffffffb2;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    letter-spacing: 2px;
+    // background-color: aqua;
   }
 }
 .social_icons {

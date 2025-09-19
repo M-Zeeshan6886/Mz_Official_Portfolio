@@ -4,6 +4,8 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../../assets";
+import { IoLogoWhatsapp } from "react-icons/io";
+
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -53,11 +55,12 @@ const Footer = () => {
             </div>
             <div className={styles.footer_container_content_right_services}>
               {/* Form here */}
+              
             </div>
           </div>
         </div>
         <p className={styles.footer_container_copyright}>
-          mzxeeshuu@gmail.com
+          mzxeeshuu@gmail.com || <IoLogoWhatsapp className={styles.social_icons}/> +923085433524
         </p>
       </div>
     </>
