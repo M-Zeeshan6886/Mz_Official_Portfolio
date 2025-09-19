@@ -16,6 +16,7 @@
     @include m.respond(tab-port) {
       flex-direction: column;
       align-items: center;
+      width: 90%;
     }
     &_left {
       width: 45%;
@@ -62,6 +63,7 @@
       width: 55%;
       //  background-color: lightblue;
       display: flex;
+      align-items: start;
       justify-content: space-between;
       @include m.respond(tab-port) {
         width: 100%;
@@ -92,7 +94,8 @@
       }
       &_services {
         width: 65%;
-        background-color: lawngreen;
+        // background-color: lawngreen;
+
         h1 {
           font-weight: 600;
           font-size: 1.6rem;
@@ -102,14 +105,53 @@
           display: flex;
           flex-direction: column;
           align-items: start;
-          button {
-            margin-top: 2.4rem;
-            background: none;
-            border: none;
-            color: white;
-            font-weight: 400;
+          // button {
+          //   margin-top: 2.4rem;
+          //   background: none;
+          //   border: none;
+          //   color: white;
+          //   font-weight: 400;
+          //   font-size: 1.4rem;
+          //   cursor: pointer;
+          // }
+        }
+        &_innerContent {
+          label {
+            font-weight: 500;
             font-size: 1.4rem;
-            cursor: pointer;
+            line-height: 32px;
+            text-align: justify;
+            letter-spacing: -0.03em;
+            color: white;
+          }
+          textarea {
+            margin-top: 0.5rem;
+            width: 100%;
+            height: 165px;
+            background-color: lightgray;
+            border-radius: 5px;
+            opacity: 0.4;
+            padding: 0.7rem 1.5rem;
+            margin-bottom: 1.2rem;
+            border: none;
+            color: black;
+            @include m.respond(tab-port) {
+              height: 70px;
+            }
+
+            &:focus {
+              outline-color: darkgray;
+              background-color: #ffffff;
+              box-shadow: 2px 2px 10px rgb(186, 185, 185);
+            }
+            &:hover {
+              outline-color: lightgray;
+              background-color: white;
+              box-shadow: 2px 2px 10px rgb(186, 185, 185);
+            }
+            &::placeholder {
+              color: lightgray;
+            }
           }
         }
       }
@@ -135,6 +177,24 @@
   cursor: pointer;
   &:hover {
     transform: scale(1.3);
-    filter:drop-shadow(0 0 15px 5px yellow); /* Adds a gray shadow */
+    filter: drop-shadow(0 0 15px 5px yellow); /* Adds a gray shadow */
+  }
+}
+.btnSubmit {
+  width: 100%;
+  padding: 1rem 0rem;
+  margin-top: 1rem;
+  background: var.$btnBG2;
+  background: rgb(123, 123, 123);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    outline-color: lightgray;
+    // background-color: white;
+    box-shadow: 2px 2px 10px rgb(186, 185, 185);
   }
 }

@@ -5,13 +5,19 @@ import { FaXTwitter } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../../assets";
 import { IoLogoWhatsapp } from "react-icons/io";
-
+import FormInput from "../../FormInput/FormInput";
+import { Formik, Form } from "formik";
+import * as Yup from "yup";
 
 const Footer = () => {
   const navigate = useNavigate();
   useEffect(() => {
     document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+  const validate = Yup.object({
+    email: Yup.string().email("Email is invalid").required("Email is Required"),
+    name: Yup.string().required("name is Required"),
+  });
   return (
     <>
       <div className={styles.footer_container}>
@@ -55,12 +61,50 @@ const Footer = () => {
             </div>
             <div className={styles.footer_container_content_right_services}>
               {/* Form here */}
-              
+              <Formik
+                initialValues={{
+                  email: "",
+                  name: "",
+                }}
+                validate={{
+                  email: "",
+                  name: "",
+                }}
+              >
+                {(formik) => (
+                  <div>
+                    <Form>
+                      <FormInput
+                        label="Name"
+                        name="name"
+                        type="text"
+                        place="Enter your name"
+                      />
+                      <FormInput
+                        label="Email"
+                        name="email"
+                        type="email"
+                        place="Enter your email"
+                      />
+                    </Form>
+                  </div>
+                )}
+              </Formik>
+              <div
+                className={
+                  styles.footer_container_content_right_services_innerContent
+                }
+              >
+                <label for="textarea">Message</label>
+                <textarea id="textarea" required></textarea>
+                <button className={styles.btnSubmit}>Submit</button>
+              </div>
             </div>
           </div>
         </div>
         <p className={styles.footer_container_copyright}>
-          mzxeeshuu@gmail.com || <IoLogoWhatsapp className={styles.social_icons}/> +923085433524
+          mzxeeshuu@gmail.com ||{" "}
+          <IoLogoWhatsapp className={styles.social_icons} /> +923085433524
         </p>
       </div>
     </>
