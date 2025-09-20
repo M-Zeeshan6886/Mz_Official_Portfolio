@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { About, Home } from "./modules";
+import { About, Home, Work } from "./modules";
 import {
   Caddie,
   ChatBot,
@@ -28,6 +28,7 @@ const Router = () => {
             <Route path="/peristudio" element={<PeriStudio />} />
           </Route>
           <Route path="/about" element={<About />} />
+          <Route path="/mywork" element={<Work />} />
         </Routes>
       </BrowserRouter>
     </>
