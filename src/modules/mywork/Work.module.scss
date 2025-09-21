@@ -2,3 +2,11 @@
 @use "../../Sass/variables" as var;
 @use "../../Sass/Styles";
 
+.work_hero{
+    padding: 1rem ;
+    background-color: var.$primarybg;
+    &_content{
+        width: 95%;
+        margin: auto;
+    }
+}
