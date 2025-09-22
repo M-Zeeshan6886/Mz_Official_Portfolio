@@ -8,5 +8,29 @@
     &_content{
         width: 95%;
         margin: auto;
+       
+      h1 {
+        font-weight: 700;
+        font-size: 6rem;
+        line-height: 72px;
+        text-align: center;
+        color: white;
+
+        @include m.respond(tab-port) {
+          font-size: 4rem;
+        }
+        span {
+          font-size: 6rem;
+          font-weight: 700;
+          color: white;
+          outline-color: white;
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke: 1px;
+
+          @include m.respond(tab-port) {
+            font-size: 4rem;
+          }
+        }
+      }
     }
 }

@@ -1,5 +1,5 @@
-@import "../Sass/mixin";
-@import "../Sass/variables";
+@use "../Sass/mixin" as m;
+@use "../Sass/variables" as var;
 
 .form {
   &-label {

@@ -9,8 +9,9 @@ const Work = () => {
       <div className={styles.work_hero}>
         <div className={styles.work_hero_content}>
           <h1>
-            My <span className={styles.primaryOutline}>Work </span>
+            My <span>Work </span>
           </h1>
+          
         </div>
       </div>
     </>
