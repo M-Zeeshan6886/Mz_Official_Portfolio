@@ -1,36 +1,63 @@
 @use "../../Sass/mixin" as m;
 @use "../../Sass/variables" as var;
-@use "../../Sass/Styles";
+@use "../../Sass/Styles" as s;
 
-.work_hero{
-    padding: 1rem ;
-    background-color: var.$primarybg;
-    &_content{
-        width: 95%;
-        margin: auto;
-       
-      h1 {
-        font-weight: 700;
+.work_hero {
+  padding: 1rem;
+  background-color: var.$primarybg;
+  &_content {
+    width: 95%;
+    margin: auto;
+    padding: 2rem;
+    h1 {
+      font-weight: 700;
+      font-size: 6rem;
+      line-height: 72px;
+      text-align: center;
+      color: white;
+
+      @include m.respond(tab-port) {
+        font-size: 4rem;
+      }
+      span {
         font-size: 6rem;
-        line-height: 72px;
-        text-align: center;
+        font-weight: 700;
         color: white;
+        outline-color: white;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
 
         @include m.respond(tab-port) {
           font-size: 4rem;
         }
-        span {
-          font-size: 6rem;
-          font-weight: 700;
-          color: white;
-          outline-color: white;
-          -webkit-text-fill-color: transparent;
-          -webkit-text-stroke: 1px;
-
-          @include m.respond(tab-port) {
-            font-size: 4rem;
-          }
-        }
       }
     }
+    p {
+      font-weight: 400;
+      font-size: 1.9rem;
+      line-height: 30px;
+      margin-top: 3rem;
+      text-align: center;
+      color: var.$secondary;
+    }
+    &_top {
+      margin-top: 3rem;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      button{
+        padding: 1rem 4rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: White;
+        background: var.$btnBg;
+        border: none;
+        border-radius: 20px;
+
+      }
+    }
+  }
 }
