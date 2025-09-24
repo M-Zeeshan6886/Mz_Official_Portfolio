@@ -46,17 +46,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-wrap: wrap;
+      flex-wrap: wrap-reverse;
       gap: 1.5rem;
-      button{
-        padding: 1rem 4rem;
+      button {
+        padding: 1rem 5rem;
         font-weight: 500;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         color: White;
         background: var.$btnBg;
         border: none;
-        border-radius: 20px;
-
+        border-radius: 50px;
       }
     }
   }
