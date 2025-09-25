@@ -52,10 +52,16 @@
         padding: 1rem 5rem;
         font-weight: 500;
         font-size: 1.8rem;
-        color: White;
-        background: var.$btnBg;
-        border: none;
+        background: none;
+        color: var.$white;
+        border: 1px solid var.$white;
         border-radius: 50px;
+        cursor: pointer;
+        &:hover {
+          background: var.$btnBg;
+          border: none;
+          color: var.$white;
+        }
       }
     }
   }
