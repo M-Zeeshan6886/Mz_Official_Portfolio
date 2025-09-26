@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from "../../common";
 import styles from "./Work.module.scss";
+import { Outlet } from "react-router-dom";
 
 const Work = () => {
   return (
@@ -27,6 +28,7 @@ const Work = () => {
             <button>SmartaClass</button>
             <button>AI ChatBot</button>
           </div>
+          <Outlet />
         </div>
       </div>
     </>
