@@ -24,8 +24,8 @@ const Work = () => {
           </p>
           <div className={styles.work_hero_content_top}>
             <button
-              onClick={() => navigate("/")}
-              className={currentPath === "/" ? styles.active : ""}
+              onClick={() => navigate("/mywork")}
+              className={currentPath === "/mywork" ? styles.active : ""}
             >
               Punt App
             </button>
