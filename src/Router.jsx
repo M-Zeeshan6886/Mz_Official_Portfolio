@@ -28,7 +28,9 @@ const Router = () => {
             <Route path="/peristudio" element={<PeriStudio />} />
           </Route>
           <Route path="/about" element={<About />} />
-          <Route path="/mywork" element={<Work />} />
+          <Route path="/mywork" element={<Work />} >
+          {/* <Route index element={}/> */}
+          </Route>
         </Routes>
       </BrowserRouter>
     </>

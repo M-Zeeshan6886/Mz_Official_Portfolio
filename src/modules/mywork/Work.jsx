@@ -1,9 +1,13 @@
 import React from "react";
 import { Navbar } from "../../common";
 import styles from "./Work.module.scss";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 
 const Work = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const currentPath = location.pathname;
+
   return (
     <>
       <Navbar />
@@ -19,7 +23,12 @@ const Work = () => {
             user-friendly, and impactful digital solutions.
           </p>
           <div className={styles.work_hero_content_top}>
-            <button>Punt App</button>
+            <button
+              onClick={() => navigate("/")}
+              className={currentPath === "/" ? styles.active : ""}
+            >
+              Punt App
+            </button>
             <button>Signature</button>
             <button>Peri Studios</button>
             <button>Rug Bazaar</button>
