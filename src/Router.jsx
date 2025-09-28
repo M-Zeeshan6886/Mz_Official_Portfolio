@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { About, Home, PuntDec, SignatureDec, Work } from "./modules";
+import { About, Home, PeriDec, PuntDec, SignatureDec, Work } from "./modules";
 import {
   Caddie,
   ChatBot,
@@ -31,6 +31,7 @@ const Router = () => {
           <Route path="/mywork" element={<Work />}>
             <Route index element={<PuntDec />} />
             <Route path="signaturedec" element={<SignatureDec />} />
+            <Route path="peridec" element={<PeriDec />} />
           </Route>
         </Routes>
       </BrowserRouter>

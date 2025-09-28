@@ -38,7 +38,14 @@ const Work = () => {
             >
               Signature
             </button>
-            <button>Peri Studios</button>
+            <button
+              onClick={() => navigate("/mywork/peridec")}
+              className={
+                currentPath === "/mywork/peridec" ? styles.active : ""
+              }
+            >
+              Peri Studios
+            </button>
             <button>Rug Bazaar</button>
             <button>Sand Caddie</button>
             <button>Suren</button>
