@@ -29,7 +29,15 @@ const Work = () => {
             >
               Punt App
             </button>
-            <button>Signature</button>
+
+            <button
+              onClick={() => navigate("/mywork/signaturedec")}
+              className={
+                currentPath === "/mywork/signaturedec" ? styles.active : ""
+              }
+            >
+              Signature
+            </button>
             <button>Peri Studios</button>
             <button>Rug Bazaar</button>
             <button>Sand Caddie</button>
