@@ -40,14 +40,22 @@ const Work = () => {
             </button>
             <button
               onClick={() => navigate("/mywork/peridec")}
-              className={
-                currentPath === "/mywork/peridec" ? styles.active : ""
-              }
+              className={currentPath === "/mywork/peridec" ? styles.active : ""}
             >
               Peri Studios
             </button>
-            <button>Rug Bazaar</button>
-            <button>Sand Caddie</button>
+            <button
+              onClick={() => navigate("/mywork/rugdec")}
+              className={currentPath === "/mywork/rugdec" ? styles.active : ""}
+            >
+              Rug Bazaar
+            </button>
+            <button
+              onClick={() => navigate("/mywork/caddiedec")}
+              className={currentPath === "/mywork/caddiedec" ? styles.active : ""}
+            >
+              Sand Caddie
+            </button>
             <button>Suren</button>
             <button>SmartaClass</button>
             <button>AI ChatBot</button>
