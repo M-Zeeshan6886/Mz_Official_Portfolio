@@ -56,7 +56,10 @@ const Work = () => {
             >
               Sand Caddie
             </button>
-            <button>Suren</button>
+            <button
+             onClick={() => navigate("/mywork/surendec")}
+              className={currentPath === "/mywork/surendec" ? styles.active : ""}
+            >Suren</button>
             <button>SmartaClass</button>
             <button>AI ChatBot</button>
           </div>

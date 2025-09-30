@@ -6,3 +6,4 @@ export { default as SignatureDec } from "./mywork/workDec/SignatureDec";
 export { default as PeriDec } from "./mywork/workDec/PeriDec";
 export { default as RugDec } from "./mywork/workDec/RugDec";
 export { default as CaddieDec } from "./mywork/workDec/CaddieDec";
+export { default as SurenDec} from "./mywork/workDec/SurenDec";
