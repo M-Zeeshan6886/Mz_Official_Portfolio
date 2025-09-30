@@ -29,7 +29,6 @@ const Work = () => {
             >
               Punt App
             </button>
-
             <button
               onClick={() => navigate("/mywork/signaturedec")}
               className={
@@ -52,16 +51,37 @@ const Work = () => {
             </button>
             <button
               onClick={() => navigate("/mywork/caddiedec")}
-              className={currentPath === "/mywork/caddiedec" ? styles.active : ""}
+              className={
+                currentPath === "/mywork/caddiedec" ? styles.active : ""
+              }
             >
               Sand Caddie
             </button>
             <button
-             onClick={() => navigate("/mywork/surendec")}
-              className={currentPath === "/mywork/surendec" ? styles.active : ""}
-            >Suren</button>
-            <button>SmartaClass</button>
-            <button>AI ChatBot</button>
+              onClick={() => navigate("/mywork/surendec")}
+              className={
+                currentPath === "/mywork/surendec" ? styles.active : ""
+              }
+            >
+              Suren
+            </button>
+            <button
+              onClick={() => navigate("/mywork/smartadec")}
+              className={
+                currentPath === "/mywork/smartadec" ? styles.active : ""
+              }
+            >
+              SmartaClass
+            </button>
+            
+            <button
+              onClick={() => navigate("/mywork/aibotdec")}
+              className={
+                currentPath === "/mywork/aibotdec" ? styles.active : ""
+              }
+            >
+              AI ChatBot
+            </button>
           </div>
           <Outlet />
         </div>
