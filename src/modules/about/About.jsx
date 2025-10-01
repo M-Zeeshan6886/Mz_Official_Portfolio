@@ -46,6 +46,65 @@ const About = () => {
           <div className={styles.about_hero_content_right}></div>
         </div>
       </div>
+
+      <div className={styles.bulb_section}>
+        <div className={styles.bulb_section_top}>
+          <h1>
+            WHY
+            <span>I</span>
+            <h2>STARTED</h2>
+          </h1>
+          <p>
+            I'm not just about developing software. We generate
+            breakthrough solutions that rewrite the digital rules by igniting
+            creative encounters.{" "}
+          </p>
+        </div>
+        <div className={styles.bulb_section_content}>
+          {/* <img src={BulbFrame} alt="frame" /> */}
+          <div className={styles.bulb_section_content_rw1}>
+            <div className={styles.bulb_section_content_rw1_left}>
+              <h1>01</h1>
+              <h2>Problem</h2>
+              <p>
+                I'm not just about developing software. I generate
+                breakthrough solutions that rewrite the digital rules by
+                igniting creative encounters.{" "}
+              </p>
+            </div>
+            <div className={styles.bulb_section_content_rw1_right}>
+              <h1>03</h1>
+              <h2>Framework</h2>
+              <p>
+                I'm not just about developing software. I generate
+                breakthrough solutions that rewrite the digital rules by
+                igniting creative encounters.
+              </p>
+            </div>
+          </div>
+          <div className={styles.bulb_section_content_rw1}>
+            <div className={styles.bulb_section_content_rw1_left}>
+              <h1>02</h1>
+              <h2>Foundation of development</h2>
+              <p>
+                Peri Studios is not just about developing software. We generate
+                breakthrough solutions that rewrite the digital rules by
+                igniting creative encounters.
+              </p>
+            </div>
+            <div className={styles.bulb_section_content_rw1_right}>
+              <h1>04</h1>
+              <h2>Benefits</h2>
+              <p>
+                Peri Studios is not just about developing software. We generate
+                breakthrough solutions that rewrite the digital rules by
+                igniting creative encounters.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className={styles.experience_container}>
         <div className={styles.experience_container_content}>
           <div className={styles.experience_container_content_top}>

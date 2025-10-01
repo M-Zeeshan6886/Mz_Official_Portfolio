@@ -160,3 +160,142 @@
     }
   }
 }
+
+
+.bulb_section {
+  padding: 4rem 0rem;
+  background: var.$primarybg;
+  &_top {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include m.respond(tab-port) {
+      width: 90%;
+    }
+    h1 {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 6rem;
+      color: var.$primary;
+      text-align: center;
+      @include m.respond(tab-port) {
+        font-size: 3rem;
+      }
+
+      span {
+        font-size: 6rem;
+        font-weight: 700;
+        color: white;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        text-align: center;
+        @include m.respond(tab-port) {
+          font-size: 3rem;
+        }
+      }
+
+      h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 6rem;
+        color: white;
+
+        @include m.respond(tab-port) {
+          font-size: 3rem;
+        }
+      }
+    }
+    p {
+      font-size: 2rem;
+      font-weight: 400;
+      color: var.$secondary;
+      text-align: center;
+      @include m.respond(tab-port) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &_content {
+    width: 90%;
+    margin: auto;
+    padding: 3rem 0rem;
+    background-image: url("../../assets/bulbGit.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    &>*:not(:first-child){
+      margin-top: 12rem;
+    }
+    &_rw1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include m.respond(tab-port){
+        flex-direction: column;
+        margin: auto;
+      }
+      &_left {
+        width: 23%;
+        // background-color: lightblue;
+        @include m.respond(tab-port){
+          width: 90%;
+          margin: auto;
+        }
+        h1 {
+          font-size: 6rem;
+          font-weight: 800;
+          color: var.$primary;
+          text-align: right;
+          @include m.respond(tab-port) {
+            font-size: 3rem;
+          }
+        }
+        h2 {
+          font-size: 3rem;
+          font-weight: 800;
+          color: white;
+          text-align: right;
+        }
+        p {
+          font-size: 2rem;
+          font-weight: 400;
+          color: #b3b3b3;
+          text-align: right;
+        }
+      }
+      &_right {
+        width: 23%;
+        // background-color: lightblue;
+        @include m.respond(tab-port){
+          width: 90%;
+          margin: auto;
+        }
+        h1 {
+          font-size: 6rem;
+          font-weight: 800;
+          color: var.$primary;
+          text-align: left;
+          @include m.respond(tab-port) {
+            font-size: 3rem;
+          }
+        }
+        h2 {
+          font-size: 3rem;
+          font-weight: 800;
+          color: white;
+          text-align: left;
+        }
+        p {
+          font-size: 2rem;
+          font-weight: 400;
+          color: #b3b3b3;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
