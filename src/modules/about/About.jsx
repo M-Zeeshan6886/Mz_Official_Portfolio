@@ -55,9 +55,9 @@ const About = () => {
             <h2>STARTED</h2>
           </h1>
           <p>
-            I'm not just about developing software. We generate
-            breakthrough solutions that rewrite the digital rules by igniting
-            creative encounters.{" "}
+            I'm not just about developing software. We generate breakthrough
+            solutions that rewrite the digital rules by igniting creative
+            encounters.{" "}
           </p>
         </div>
         <div className={styles.bulb_section_content}>
@@ -67,18 +67,18 @@ const About = () => {
               <h1>01</h1>
               <h2>Problem</h2>
               <p>
-                I'm not just about developing software. I generate
-                breakthrough solutions that rewrite the digital rules by
-                igniting creative encounters.{" "}
+                I'm not just about developing software. I generate breakthrough
+                solutions that rewrite the digital rules by igniting creative
+                encounters.{" "}
               </p>
             </div>
             <div className={styles.bulb_section_content_rw1_right}>
               <h1>03</h1>
               <h2>Framework</h2>
               <p>
-                I'm not just about developing software. I generate
-                breakthrough solutions that rewrite the digital rules by
-                igniting creative encounters.
+                I'm not just about developing software. I generate breakthrough
+                solutions that rewrite the digital rules by igniting creative
+                encounters.
               </p>
             </div>
           </div>
@@ -143,6 +143,21 @@ const About = () => {
               P1="Project : Service Navigation System | Elite Website "
               P2="Project : Email Signature System | Signature Website"
             />
+          </div>
+        </div>
+      </div>
+      <div className={styles.marketing_section}>
+        <div className={styles.marketing_section_content}>
+          <h3>MAKING THE RIGHT CHOICES</h3>
+          <h1>
+            <span>LET'S</span> START YOUR
+          </h1>
+          <h2>
+            <span>DIGITAL</span> BUSINESS
+          </h2>
+          <div className={styles.marketing_section_content_mailBox}>
+            <input type="email" placeholder="Enter your email address" />
+            <button>Get Started</button>
           </div>
         </div>
       </div>
