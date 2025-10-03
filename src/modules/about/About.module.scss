@@ -304,6 +304,18 @@
 .marketing_section {
   padding: 10rem 0rem;
   background-color: var.$primarybg;
+  position: relative;
+  img{
+    position: absolute;
+    top: -35%;
+    right: 7%;
+    @include m.respond(tab-port){
+        width: 120px;
+        top: -14%;
+        right:3%;
+        opacity: 0.7;
+    }
+  }
   &_content {
     width: 80%;
     margin: auto;

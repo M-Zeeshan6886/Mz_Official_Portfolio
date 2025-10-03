@@ -23,6 +23,7 @@ import EWB5 from "./ewBanner5.png";
 import aboutBanner from "./aboutBanner.jpeg";
 import cyberLogo from "./cyberLogo.jpg";
 import eliteLogo from "./eliteLogo.jpg";
+import AnimatedCartone from "./quoteanimated.png";
 
 export {
   Logo,
@@ -50,4 +51,5 @@ export {
   aboutBanner,
   cyberLogo,
   eliteLogo,
+  AnimatedCartone,
 };

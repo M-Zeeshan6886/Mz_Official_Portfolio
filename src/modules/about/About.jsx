@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Footer, Navbar } from "../../common";
 import styles from "./About.module.scss";
 import { MdOutlineFileDownload } from "react-icons/md";
-import { cyberLogo, eliteLogo, EWF5 } from "../../assets";
+import { AnimatedCartone, cyberLogo, eliteLogo, EWF5 } from "../../assets";
 
 const About = () => {
   useEffect(() => {
@@ -147,6 +147,7 @@ const About = () => {
         </div>
       </div>
       <div className={styles.marketing_section}>
+        <img src={AnimatedCartone} alt="cartone" />
         <div className={styles.marketing_section_content}>
           <h3>MAKING THE RIGHT CHOICES</h3>
           <h1>
