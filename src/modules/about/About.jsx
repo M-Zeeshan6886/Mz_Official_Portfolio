@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Footer, Navbar } from "../../common";
+import { Carousel, Footer, Navbar } from "../../common";
 import styles from "./About.module.scss";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { AnimatedCartone, cyberLogo, eliteLogo, EWF5 } from "../../assets";
@@ -105,6 +105,7 @@ const About = () => {
         </div>
       </div>
 
+      <Carousel />
       <div className={styles.experience_container}>
         <div className={styles.experience_container_content}>
           <div className={styles.experience_container_content_top}>
