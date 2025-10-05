@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Carousel, Footer, Navbar } from "../../common";
 import styles from "./About.module.scss";
 import { MdOutlineFileDownload } from "react-icons/md";
-import { AnimatedCartone, cyberLogo, eliteLogo, EWF5 } from "../../assets";
+import { AnimatedCartone } from "../../assets";
 
 const About = () => {
   useEffect(() => {
@@ -106,47 +106,7 @@ const About = () => {
       </div>
 
       <Carousel />
-      <div className={styles.experience_container}>
-        <div className={styles.experience_container_content}>
-          <div className={styles.experience_container_content_top}>
-            <h2>Relavent</h2>
-            <h1>
-              <span className={styles.primaryOutline}>Experience </span>
-            </h1>
-          </div>
-          <div className={styles.experience_container_content_bottom}>
-            <div className={styles.experience_container_content_bottom_cardBox}>
-              <ExCard
-                Img={EWF5}
-                title="Full Stack Developer"
-                comName="Peri Studios -- Full-time"
-                dates="DEC 2023 - Prensent 1 yr 6 mons"
-                P1="Project : E-Learning Management System | SmartaClass"
-                P2="Project : Smart Building Management System | Suren"
-                P3="Project : Rental Management System | Sand Caddie"
-                P4="Project : E-Commerce Management System | Rug Bazaar"
-                P5="Project : Service Navigation System | Peri Studios"
-              />
-            </div>
-            <ExCard
-              Img={cyberLogo}
-              title="Front End Developer"
-              comName="Cyber Advance Solutions -- Full-time"
-              dates="Sep 2023 - Feb 2024  6 mons"
-              P1="Project : OpenAI System | AI ChatBot "
-              P2="Project : Service Navigation System | Portfolios"
-            />
-            <ExCard
-              Img={eliteLogo}
-              title="Internship"
-              comName="Elite IT Team -- Full-time"
-              dates="Feb 2023 - Aug 2023  6 mons"
-              P1="Project : Service Navigation System | Elite Website "
-              P2="Project : Email Signature System | Signature Website"
-            />
-          </div>
-        </div>
-      </div>
+
       <div className={styles.marketing_section}>
         <img src={AnimatedCartone} alt="cartone" />
         <div className={styles.marketing_section_content}>
@@ -170,26 +130,26 @@ const About = () => {
 
 export default About;
 
-const ExCard = (props) => {
-  return (
-    <>
-      <div className={styles.excard_container}>
-        <div className={styles.excard_container_content}>
-          <img src={props.Img} alt="Logo" />
-          <div className={styles.excard_container_content_right}>
-            <h1>{props.title}</h1>
-            <h3>{props.comName}</h3>
-            <span>{props.dates}</span>
-            <br />
-            <br />
-            <p>{props.P1}</p>
-            <p> {props.P2}</p>
-            <p>{props.P3}</p>
-            <p> {props.P4}</p>
-            <p> {props.P5}</p>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+// const ExCard = (props) => {
+//   return (
+//     <>
+//       <div className={styles.excard_container}>
+//         <div className={styles.excard_container_content}>
+//           <img src={props.Img} alt="Logo" />
+//           <div className={styles.excard_container_content_right}>
+//             <h1>{props.title}</h1>
+//             <h3>{props.comName}</h3>
+//             <span>{props.dates}</span>
+//             <br />
+//             <br />
+//             <p>{props.P1}</p>
+//             <p> {props.P2}</p>
+//             <p>{props.P3}</p>
+//             <p> {props.P4}</p>
+//             <p> {props.P5}</p>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };

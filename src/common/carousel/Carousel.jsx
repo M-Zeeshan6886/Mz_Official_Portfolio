@@ -15,14 +15,14 @@ const Carousel = () => {
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
-//     appendDots: dots => (
-//       <div>
-//         <ul style={{ margin: "0px" }}> {dots} </ul>
-//       </div>
-//     ),
-//     customPaging: i => (
-//       <div className={styles.customDot}></div>
-//     ),
+    //     appendDots: dots => (
+    //       <div>
+    //         <ul style={{ margin: "0px" }}> {dots} </ul>
+    //       </div>
+    //     ),
+    //     customPaging: i => (
+    //       <div className={styles.customDot}></div>
+    //     ),
   };
 
   return (
@@ -30,9 +30,9 @@ const Carousel = () => {
       <div className={styles.client_feedback}>
         <div className={styles.client_feedback_content}>
           <div className={styles.client_feedback_content_top}>
-            <h2>WHAT THEY SAY ABOUT US</h2>
-            <span>CLIENT'S</span>
-            <h1>TESTIMONIALS</h1>
+            <h2>Relavent</h2>
+            <span>Experience</span>
+            {/* <h1>TESTIMONIALS</h1> */}
           </div>
           <div className={styles.client_feedback_content_bottom}>
             <div className={styles.slider_container}>
@@ -42,15 +42,16 @@ const Carousel = () => {
                     <div className={styles.slideView_content}>
                       <div className={styles.slideView_content_left}>
                         <img src={EWF5} alt="Photo" />
-                        <h1>Phillip</h1>
-                        <p>Director at Vivint Smart Home</p>
                       </div>
                       <div className={styles.slideView_content_right}>
+                        <h1>Full Stack Developer</h1>
+                        <h3>Peri Studios -- Full-time</h3>
+                        <span>DEC 2023 - Prensent 1 yr 6 mons</span>
                         <p>
-                          "Hassan and his team were great to work with. They
-                          helped us take an idea of I phone App and bring it to
-                          life. They helped us through design functionality and
-                          more.”
+                          E-Learning Management System, Smart Building
+                          Management System, Rental Management System,
+                          E-Commerce Management System & Service Navigation
+                          System
                         </p>
                       </div>
                     </div>
@@ -61,15 +62,14 @@ const Carousel = () => {
                     <div className={styles.slideView_content}>
                       <div className={styles.slideView_content_left}>
                         <img src={cyberLogo} alt="Photo" />
-                        <h1>Geogrge Lee</h1>
-                        <p>C.E.O & Founder of 247 Pro</p>
                       </div>
                       <div className={styles.slideView_content_right}>
+                        <h1>Front End Developer</h1>
+                        <h3>Cyber Advance Solutions -- Full-time</h3>
+                        <span>Sep 2023 - Feb 2024 6 mons</span>
                         <p>
-                          "Peri studios took a challenge of developing a complex
-                          social system with many features, marketplace, online
-                          posting and integrating APIs with many platforms and a
-                          robust backend panel for us.”
+                          OpenAI System | AI ChatBot & Service Navigation System
+                          | Portfolios
                         </p>
                       </div>
                     </div>
@@ -80,34 +80,14 @@ const Carousel = () => {
                     <div className={styles.slideView_content}>
                       <div className={styles.slideView_content_left}>
                         <img src={eliteLogo} alt="Photo" />
-                        <h1>Davin</h1>
-                        <p>C.E.O & Founder of Dr. Hr & Co</p>
                       </div>
                       <div className={styles.slideView_content_right}>
+                        <h1>Internship</h1>
+                        <h3>Elite IT Team -- Full-time</h3>
+                        <span>Feb 2023 - Aug 2023 6 mons</span>
                         <p>
-                          "Peri studios took a challenge of developing a complex
-                          social system with many features, marketplace, online
-                          posting and integrating APIs with many platforms and a
-                          robust backend panel for us.”
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div className={styles.slideView}>
-                    <div className={styles.slideView_content}>
-                      <div className={styles.slideView_content_left}>
-                        <img src={EWF5} alt="Photo" />
-                        <h1>Daphne Magna</h1>
-                        <p>Founder of Tough Convos</p>
-                      </div>
-                      <div className={styles.slideView_content_right}>
-                        <p>
-                          "Peri studios has done a fantastic job on design. I am
-                          happy to work with them for the dev side of my
-                          project. Communication is fine. Highly recommended for
-                          design and develop projects, Thanks!”
+                          Service Navigation System | Elite Website, Email
+                          Signature System | Signature Website
                         </p>
                       </div>
                     </div>
