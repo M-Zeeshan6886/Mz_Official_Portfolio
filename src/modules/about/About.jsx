@@ -67,18 +67,17 @@ const About = () => {
               <h1>01</h1>
               <h2>Problem</h2>
               <p>
-                I'm not just about developing software. I generate breakthrough
-                solutions that rewrite the digital rules by igniting creative
-                encounters.{" "}
+                Turning ideas into real, functional products is harder than it
+                looks. Too many projects lose direction between vision and
+                execution.
               </p>
             </div>
             <div className={styles.bulb_section_content_rw1_right}>
               <h1>03</h1>
               <h2>Framework</h2>
               <p>
-                I'm not just about developing software. I generate breakthrough
-                solutions that rewrite the digital rules by igniting creative
-                encounters.
+                Our modular system keeps development fast, flexible, and
+                scalable—ready to grow with any project.
               </p>
             </div>
           </div>
@@ -87,18 +86,16 @@ const About = () => {
               <h1>02</h1>
               <h2>Foundation of development</h2>
               <p>
-                Peri Studios is not just about developing software. We generate
-                breakthrough solutions that rewrite the digital rules by
-                igniting creative encounters.
+                I builds with purpose—clean design, strong UX, and a focus on
+                solving real problems from the ground up.
               </p>
             </div>
             <div className={styles.bulb_section_content_rw1_right}>
               <h1>04</h1>
               <h2>Benefits</h2>
               <p>
-                Peri Studios is not just about developing software. We generate
-                breakthrough solutions that rewrite the digital rules by
-                igniting creative encounters.
+                We help teams launch quickly, scale easily, and deliver digital
+                products that actually make an impact.
               </p>
             </div>
           </div>
