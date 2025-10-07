@@ -7,6 +7,7 @@
   width: 100%;
   margin: auto;
   background-image: url("../../assets/exploreBg.png");
+  
   &_content {
     width: 95%;
     margin: auto;
@@ -52,19 +53,27 @@
     }
     &_right {
       width: 47%;
-      height: 100vh;
+      height: 120vh;
       //   padding: 1rem;
       border-radius: 5px;
       //   background-color: lavender;
       background-image: url("../../assets/aboutBanner.jpeg");
-      background-size: contain;
+      background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
       @include m.respond(tab-port) {
         width: 95%;
         margin-top: 2rem;
         background-repeat: no-repeat;
         height: 80vh;
         border-radius: 10px;
+      }
+      img{
+        width: 85%;
+        margin: auto;
+        height: 100%;
       }
     }
   }
