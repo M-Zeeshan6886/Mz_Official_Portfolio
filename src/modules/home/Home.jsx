@@ -3,6 +3,7 @@ import { Footer, Navbar, ServiceBox } from "../../common";
 import styles from "./Home.module.scss";
 import { MdOutlineFileDownload } from "react-icons/md";
 import {
+  AnimatedCartone,
   heroBanner,
   SIcon1,
   SIcon2,
@@ -126,6 +127,23 @@ const Home = () => {
         </div>
       </div>
       <Explore />
+
+      <div className={styles.marketing_section}>
+        <img src={AnimatedCartone} alt="cartone" />
+        <div className={styles.marketing_section_content}>
+          <h3>MAKING THE RIGHT CHOICES</h3>
+          <h1>
+            <span>LET'S</span> START YOUR
+          </h1>
+          <h2>
+            <span>DIGITAL</span> BUSINESS
+          </h2>
+          <div className={styles.marketing_section_content_mailBox}>
+            <input type="email" placeholder="Enter your email address" />
+            <button>Get Started</button>
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   );

@@ -338,3 +338,129 @@
     }
   }
 }
+
+
+.marketing_section {
+  padding: 10rem 0rem;
+  background-color: var.$primarybg;
+  position: relative;
+  img{
+    position: absolute;
+    top: -35%;
+    right: 7%;
+    @include m.respond(tab-port){
+        width: 120px;
+        top: -14%;
+        right:3%;
+        opacity: 0.7;
+    }
+  }
+  &_content {
+    width: 80%;
+    margin: auto;
+    padding: 3rem 0rem;
+
+    background: linear-gradient(
+      90.89deg,
+      rgba(110, 195, 141, 0.7) -7.33%,
+      rgba(37, 152, 206, 0.7) 100%
+    );
+    border-radius: 24px;
+    @include m.respond(phone) {
+      width: 90%;
+    }
+    h3 {
+      font-weight: 500;
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 8rem;
+      //  line-height: 72px;
+      text-align: center;
+      color: white;
+      letter-spacing: -2%;
+      @include m.respond(tab-port) {
+        font-size: 5rem;
+      }
+      @include m.respond(phone) {
+        font-size: 4rem;
+      }
+      span {
+        font-size: 8rem;
+        font-weight: 700;
+        color: white;
+        outline-color: white;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        letter-spacing: -2%;
+        @include m.respond(tab-port) {
+          font-size: 5rem;
+        }
+        @include m.respond(phone) {
+          font-size: 4rem;
+        }
+      }
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 7rem;
+      //  line-height: 72px;
+      text-align: center;
+      letter-spacing: -2%;
+      color: #27ed6f;
+      @include m.respond(tab-port) {
+        font-size: 5rem;
+      }
+      @include m.respond(phone) {
+        font-size: 4rem;
+      }
+      span {
+        font-size: 7rem;
+        letter-spacing: -2%;
+        font-weight: 700;
+        color: white;
+        outline-color: white;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        @include m.respond(tab-port) {
+          font-size: 5rem;
+        }
+        @include m.respond(phone) {
+          font-size: 4rem;
+        }
+      }
+    }
+    &_mailBox {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      input {
+        width: 40%;
+        padding: 1.6rem 1.6rem;
+        border: 1px solid white;
+        border-radius: 12px;
+        background: none;
+        outline: none;
+        @include m.respond(tab-port) {
+          width: 90%;
+        }
+        &::placeholder {
+          color: #ffffffb2;
+        }
+      }
+      button {
+        padding: 1.6rem;
+        border-radius: 0px 12px 12px 0px;
+        margin-left: -10.9rem;
+        border: none;
+        cursor: pointer;
+        color: #18191f;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
