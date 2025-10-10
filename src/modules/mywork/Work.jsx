@@ -73,7 +73,7 @@ const Work = () => {
             >
               SmartaClass
             </button>
-            
+
             <button
               onClick={() => navigate("/mywork/aibotdec")}
               className={
@@ -83,7 +83,9 @@ const Work = () => {
               AI ChatBot
             </button>
           </div>
-          <Outlet />
+          <div className={styles.work_hero_content_bottom}>
+            <Outlet />
+          </div>
         </div>
       </div>
     </>

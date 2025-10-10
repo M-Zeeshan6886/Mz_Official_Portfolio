@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../Work.module.scss";
-import { EWB3 } from "../../../assets";
+import { DecWorkFrame1, EWB3 } from "../../../assets";
 
 const SurenDec = () => {
   return (
@@ -11,7 +11,31 @@ const SurenDec = () => {
           <div className={styles.dec_container_content_left}>
             <img src={EWB3} alt="" />
           </div>
-          <div className={styles.dec_container_content_right}></div>
+          <div className={styles.dec_container_content_right}>
+            <h1>Suren</h1>
+            <p>
+              The Smart Building Management System is an advanced platform
+              designed to streamline device, zone, and lighting management
+              within modern infrastructures. Built with React.js and SCSS
+              modules, the system provides an intuitive interface for managing
+              devices, doors/gates, zones, and lighting systems with ease.
+            </p>
+          </div>
+        </div>
+        <div className={styles.dec_container_content}>
+          <div className={styles.dec_container_content_right}>
+            <h1>Suren</h1>
+            <p>
+              The Smart Building Management System is an advanced platform
+              designed to streamline device, zone, and lighting management
+              within modern infrastructures. Built with React.js and SCSS
+              modules, the system provides an intuitive interface for managing
+              devices, doors/gates, zones, and lighting systems with ease.
+            </p>
+          </div>
+          <div className={styles.dec_container_content_left}>
+            <img src={DecWorkFrame1} alt="" />
+          </div>
         </div>
       </div>
     </>

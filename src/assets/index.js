@@ -24,6 +24,7 @@ import aboutBanner from "./aboutBanner.jpeg";
 import cyberLogo from "./cyberLogo.jpg";
 import eliteLogo from "./eliteLogo.jpg";
 import AnimatedCartone from "./quoteanimated.png";
+import DecWorkFrame1 from "./WorkFrame1.png";
 
 export {
   Logo,
@@ -52,4 +53,5 @@ export {
   cyberLogo,
   eliteLogo,
   AnimatedCartone,
+  DecWorkFrame1,
 };
