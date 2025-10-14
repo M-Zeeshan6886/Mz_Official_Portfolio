@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../Work.module.scss";
-import { DecWorkFrame1, EWB3 } from "../../../assets";
+import { DecWorkFrame1, DecWorkFrame2, EWB3 } from "../../../assets";
 
 const SurenDec = () => {
   return (
@@ -35,6 +35,21 @@ const SurenDec = () => {
           </div>
           <div className={styles.dec_container_content_left}>
             <img src={DecWorkFrame1} alt="" />
+          </div>
+        </div>
+        <div className={styles.dec_container_content}>
+          <div className={styles.dec_container_content_left}>
+            <img src={DecWorkFrame2} alt="" />
+          </div>
+          <div className={styles.dec_container_content_right}>
+            <h1>Setting</h1>
+            <p>
+              The Smart Building Management System includes a comprehensive
+              Settings module that enables users to manage profile details,
+              update passwords, adjust notifications, set roles and permissions,
+              and access help resources—all from a single, organized interface
+              for seamless system control.
+            </p>
           </div>
         </div>
       </div>
