@@ -26,6 +26,9 @@ import eliteLogo from "./eliteLogo.jpg";
 import AnimatedCartone from "./quoteanimated.png";
 import DecWorkFrame1 from "./WorkFrame1.png";
 import DecWorkFrame2 from "./WorkFrame2.png";
+import DecWorkFrame3 from "./WorkFrame3.png";
+import DecWorkFrame4 from "./WorkFrame4.png";
+import DecWorkFrame5 from "./WorkFrame5.png";
 
 export {
   Logo,
@@ -56,4 +59,7 @@ export {
   AnimatedCartone,
   DecWorkFrame1,
   DecWorkFrame2,
+  DecWorkFrame3,
+  DecWorkFrame4,
+  DecWorkFrame5,
 };
