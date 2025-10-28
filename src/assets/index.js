@@ -29,6 +29,7 @@ import DecWorkFrame2 from "./WorkFrame2.png";
 import DecWorkFrame3 from "./WorkFrame3.png";
 import DecWorkFrame4 from "./WorkFrame4.png";
 import DecWorkFrame5 from "./WorkFrame5.png";
+import DecWorkFrame6 from "./WorkFrame6.png";
 
 export {
   Logo,
@@ -62,4 +63,5 @@ export {
   DecWorkFrame3,
   DecWorkFrame4,
   DecWorkFrame5,
+  DecWorkFrame6,
 };

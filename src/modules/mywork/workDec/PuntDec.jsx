@@ -1,11 +1,8 @@
 import React from "react";
 import styles from "../Work.module.scss";
 import {
-  DecWorkFrame1,
-  DecWorkFrame2,
   DecWorkFrame4,
   DecWorkFrame5,
-  EWB3,
   EWB4,
 } from "../../../assets";
 
