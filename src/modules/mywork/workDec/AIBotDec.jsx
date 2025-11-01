@@ -14,7 +14,9 @@ const AIBotDec = () => {
         <h1>AI ChatBot</h1>
         <div className={styles.dec_container_content}>
           <div className={styles.dec_container_content_left}>
-            <img src={DecWorkFrame6} alt="" />
+            <div className={styles.dec_container_content_left_Box}>
+              <img src={DecWorkFrame6} alt="" />
+            </div>
           </div>
           <div className={styles.dec_container_content_right}>
             <h1>AI ChatBot</h1>
@@ -38,7 +40,9 @@ const AIBotDec = () => {
             </p>
           </div>
           <div className={styles.dec_container_content_left}>
-            <img src={DecWorkFrame7} alt="" />
+            <div className={styles.dec_container_content_left_Box}>
+              <img src={DecWorkFrame7} alt="" />
+            </div>
           </div>
         </div>
       </div>
