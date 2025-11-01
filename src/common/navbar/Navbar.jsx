@@ -104,7 +104,7 @@ const Navbar = () => {
               >
                 <button onClick={() => navigate("/")}>Home</button>
                 <button onClick={() => navigate("/about")}>About</button>
-                <button onClick={() => navigate("/work")}>My Work</button>
+                <button onClick={() => navigate("/mywork")}>My Work</button>
                 <button onClick={() => navigate("/contactus")}>
                   Contact Me
                 </button>
