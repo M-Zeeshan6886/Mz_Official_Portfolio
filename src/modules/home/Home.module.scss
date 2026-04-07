@@ -7,7 +7,7 @@
   background: var.$primarybg;
   &_content {
     width: 90%;
-    height: 85vh;
+    height: 100vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -49,25 +49,28 @@
       }
     }
     &_right {
-      width: 45%;
-      height: 100%;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-      border-radius: 20px;
-      overflow: hidden; // keeps image inside the border
-      animation: zoomIn 1s ease-out forwards;
+      width: 47%;
+      height: 105vh;
+      //   padding: 1rem;
+      border-radius: 5px;
+      //   background-color: lavender;
+      background-image: url("../../assets/aboutBanner.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
       @include m.respond(tab-port) {
-        width: 100%;
+        width: 95%;
+        margin-top: 2rem;
+        background-repeat: no-repeat;
+        height: 80vh;
+        border-radius: 10px;
       }
-      img {
-        width: 100%;
+      img{
+        width: 85%;
+        margin: auto;
         height: 100%;
-        border-radius: 20px;
-        // object-fit: cover;
-        transition: transform 0.5s ease; // for hover effect
-      }
-
-      &:hover img {
-        transform: scale(1.05); // zoom on hover
       }
     }
   }

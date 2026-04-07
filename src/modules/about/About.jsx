@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Carousel, Footer, Navbar } from "../../common";
 import styles from "./About.module.scss";
 import { MdOutlineFileDownload } from "react-icons/md";
-import { aboutBanner, AnimatedCartone } from "../../assets";
+import { aboutBanner, AnimatedCartone, heroBanner } from "../../assets";
 
 const About = () => {
   useEffect(() => {
@@ -44,7 +44,7 @@ const About = () => {
             </button>
           </div>
           <div className={styles.about_hero_content_right}>
-            <img src={aboutBanner} alt="" />
+            <img src={heroBanner} alt="heroBanner" />
           </div>
         </div>
       </div>

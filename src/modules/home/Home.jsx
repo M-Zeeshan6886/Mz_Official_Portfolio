@@ -3,6 +3,7 @@ import { Footer, Navbar, ServiceBox } from "../../common";
 import styles from "./Home.module.scss";
 import { MdOutlineFileDownload } from "react-icons/md";
 import {
+  aboutBanner,
   AnimatedCartone,
   heroBanner,
   SIcon1,
@@ -60,7 +61,11 @@ const Home = () => {
           <div className={styles.hero_section_content_left}>
             <span>Hi my name is </span>
             <h1>Muhammad Zeeshan Zafar</h1>
-            <p>I am a Full Stack Developer.</p>
+            <p>
+              Full Stack Developer | React JS | JavaScript | Business
+              Development Executive | Upwork Bidding Expert | Driving Tech &
+              Client Success
+            </p>
             <button className={styles.animated_button}>
               <p className={styles.button_inner}>
                 <MdOutlineFileDownload style={{ fontSize: "2rem" }} />
@@ -69,7 +74,7 @@ const Home = () => {
             </button>
           </div>
           <div className={styles.hero_section_content_right}>
-            <img src={heroBanner} alt="heroBanner" />
+            <img src={aboutBanner} alt="" />
           </div>
         </div>
       </div>
